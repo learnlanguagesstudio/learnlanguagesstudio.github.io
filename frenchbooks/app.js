@@ -29,7 +29,6 @@ const STRINGS = {
     footer: "看小說學法語：法文分級雙語閱讀器",
     linkPrivacy: "隱私權政策",
     linkTerms: "使用條款",
-    linkDeletion: "資料刪除",
     linkContact: "聯絡我們",
   },
   chs: {
@@ -55,7 +54,6 @@ const STRINGS = {
     footer: "看小说学法语：法文分级双语阅读器",
     linkPrivacy: "隐私权政策",
     linkTerms: "使用条款",
-    linkDeletion: "数据删除",
     linkContact: "联系我们",
   },
   en: {
@@ -81,7 +79,6 @@ const STRINGS = {
     footer: "Learn French: Bilingual Reader",
     linkPrivacy: "Privacy policy",
     linkTerms: "Terms of use",
-    linkDeletion: "Data deletion",
     linkContact: "Contact",
   },
   fr: {
@@ -107,7 +104,6 @@ const STRINGS = {
     footer: "Français Facile : Lectures Graduées",
     linkPrivacy: "Confidentialité",
     linkTerms: "Conditions",
-    linkDeletion: "Suppression des données",
     linkContact: "Contact",
   },
 };
