@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Learn Languages Studio Limited — language-learning apps for curious readers."
+      content="Learn Languages Studio Limited — language-learning apps."
     />
     <title>Learn Languages Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550;9..144,650&family=Source+Sans+3:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -31,22 +31,26 @@
         <p class="studio-kicker" data-i18n="kicker">Learn Languages Studio</p>
         <h1 class="studio-brand" data-i18n="brand">Learn Languages Studio Limited</h1>
         <p class="studio-lead" data-i18n="lead">
-          We build calm, offline-first language apps so you can learn by reading — at your own pace.
+          We make language-learning apps. Here’s what we publish.
         </p>
 
-        <a class="product-card" href="https://learnlanguagesstudio.com/frenchbooks/">
-          <p class="product-card__eyebrow" data-i18n="productEyebrow">App</p>
-          <h2 class="product-card__title" data-i18n="productTitle">
-            Learn French: Bilingual Reader
-          </h2>
-          <p class="product-card__body" data-i18n="productBody">
-            Graded bilingual novels, tap-for-glosses, grammar hints, and export for review.
-          </p>
-          <p class="product-card__cta" data-i18n="productCta">Open product page →</p>
-        </a>
+        <div class="product-list" aria-label="Apps">
+          <a class="product-row" href="https://learnlanguagesstudio.com/frenchbooks/">
+            <div class="product-row__text">
+              <p class="product-row__eyebrow" data-i18n="productEyebrow">App</p>
+              <h2 class="product-row__title" data-i18n="productTitle">
+                Learn French: Bilingual Reader
+              </h2>
+              <p class="product-row__body" data-i18n="productBody">
+                Graded bilingual novels, tap-for-glosses, grammar hints, and export for review.
+              </p>
+            </div>
+            <span class="product-row__cta" data-i18n="productCta" aria-hidden="true">→</span>
+          </a>
+        </div>
 
         <p class="studio-contact">
-          <span data-i18n="contactLabel">Support</span>:
+          <span data-i18n="contactLabel">Contact</span>:
           <a href="mailto:support@learnlanguagesstudio.com?subject=%5BStudio%20Contact%5D"
             >support@learnlanguagesstudio.com</a
           >
@@ -55,25 +59,6 @@
     </main>
 
     <footer class="site-footer">
-      <nav class="footer-links" aria-label="Legal">
-        <a
-          href="https://learnlanguagesstudio.com/frenchbooks/privacy.html"
-          data-i18n="linkPrivacy"
-          >Privacy</a
-        >
-        <span aria-hidden="true">·</span>
-        <a
-          href="https://learnlanguagesstudio.com/frenchbooks/terms.html"
-          data-i18n="linkTerms"
-          >Terms</a
-        >
-        <span aria-hidden="true">·</span>
-        <a
-          href="mailto:support@learnlanguagesstudio.com?subject=%5BStudio%20Contact%5D"
-          data-i18n="linkContact"
-          >Contact</a
-        >
-      </nav>
       <p data-i18n="footer">Learn Languages Studio Limited</p>
       <p class="footer-copy">© 2026 Learn Languages Studio Limited. All rights reserved.</p>
     </footer>

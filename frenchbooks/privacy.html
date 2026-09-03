@@ -41,20 +41,27 @@
         <p>
           We do <strong>not</strong> use advertising or third-party analytics SDKs to track you,
           and we do <strong>not</strong> sell personal data. The App is designed to work primarily
-          <strong>offline</strong>. Reading progress and settings remain on <strong>your device</strong>.
-          Purchases are processed by the <strong>Apple App Store</strong> or <strong>Google Play</strong>.
+          <strong>offline</strong>. Reading progress, reading-time statistics, and settings remain on
+          <strong>your device</strong>. Optional store push notifications (if enabled) use Firebase／Google
+          as described below. Purchases are processed by the <strong>Apple App Store</strong> or
+          <strong>Google Play</strong>.
         </p>
 
         <h2>2. Information stored on your device</h2>
         <p>Depending on how you use the App, your device may store:</p>
         <ul>
           <li>Reading progress, bookmarks, and favourites</li>
+          <li>
+            Reading time (including minutes), reading-day or streak records, dictionary lookup
+            counts, and chapter check-in or completion records
+          </li>
           <li>Display, language, and text-to-speech preferences</li>
           <li>Purchase unlock status (including secure on-device storage where available)</li>
+          <li>Notification preference flags related to optional store alerts (where available)</li>
         </ul>
         <p>
-          As currently designed, the App does <strong>not</strong> upload this information to
-          servers operated by Learn Languages Studio Limited.
+          As currently designed, the App does <strong>not</strong> upload this reading or progress
+          information to servers operated by Learn Languages Studio Limited.
         </p>
 
         <h2>3. Purchases</h2>
@@ -73,7 +80,22 @@
           for on-device use; it is for your personal review only — do not publicly upload or redistribute it.
         </p>
 
-        <h2>5. Sharing and social platforms</h2>
+        <h2>5. Push notifications (optional)</h2>
+        <p>
+          With your permission, the App may use <strong>Firebase Cloud Messaging</strong> (Google) and
+          on-device local notifications to tell you about bookstore updates—for example new or updated
+          titles, or catalog / takedown notices. A device push token may be registered with Google’s
+          Firebase services so messages can be delivered. These notices are for store and catalog
+          operations; they are <strong>not</strong> used to upload your reading progress, bookmarks,
+          vocabulary cards, or reading-time statistics to Learn Languages Studio Limited.
+        </p>
+        <p>
+          You can decline or later turn off notifications in the App settings and/or your device’s
+          system notification settings. Uninstalling the App also stops delivery to that installation.
+          Google’s handling of Firebase data is described in Google’s privacy documentation.
+        </p>
+
+        <h2>6. Sharing and social platforms</h2>
         <p>
           When you share images, videos, text, or other content from the App—via the system share sheet
           or in-app shortcuts (for example Instagram Stories or Threads)—the app you choose
@@ -84,7 +106,7 @@
           those platforms, and we do not upload your reading progress, bookmarks, or vocabulary cards to them.
         </p>
 
-        <h2>6. Linguistic reference data</h2>
+        <h2>7. Linguistic reference data</h2>
         <p>
           The App may reference open linguistic resources as described in About / Credits
           (including package licenses in the App). Lexique 4 (CC BY-SA 4.0) and wordfreq
@@ -93,22 +115,27 @@
           classification (CC BY-SA 4.0).
         </p>
 
-        <h2>7. Children</h2>
+        <h2>8. Children</h2>
         <p>
           The App is not directed at children under 13 (or the higher age required in your region).
           Please do not send us personal information about children except as needed for support.
         </p>
 
-        <h2 id="data-deletion">8. Data deletion</h2>
+        <h2 id="data-deletion">9. Data deletion</h2>
         <p>
           You can delete or request deletion of data as follows. For a short step-by-step page, see
           <a href="data-deletion.html">Data deletion info</a>.
         </p>
         <ol>
           <li>
-            <strong>On your device.</strong> Clear reading progress, settings, bookmarks, favourites,
-            glosses, and local backups in the App settings, or uninstall the App (or clear App storage).
-            Most App data stays only on your device and is removed that way.
+            <strong>On your device.</strong> Clear reading progress, reading-time and related statistics,
+            settings, bookmarks, favourites, glosses, and local backups in the App settings, or uninstall
+            the App (or clear App storage). Most App data stays only on your device and is removed that way.
+          </li>
+          <li>
+            <strong>Notifications.</strong> Turn off store alerts in the App and/or system notification
+            settings, or uninstall the App. We do not maintain a separate user account for push delivery;
+            device tokens are handled through Firebase／Google as described above.
           </li>
           <li>
             <strong>Store purchases.</strong> Purchase and restore records are managed by the Apple App Store
@@ -125,7 +152,7 @@
           </li>
         </ol>
 
-        <h2>9. Your rights and contact</h2>
+        <h2>10. Your rights and contact</h2>
         <p>
           For privacy questions, email
           <a href="mailto:support@learnlanguagesstudio.com?subject=%5BFrenchBooks%20%E9%9A%B1%E7%A7%81%E6%AC%8A%E8%A9%A2%E5%95%8F%5D">support@learnlanguagesstudio.com</a>.
@@ -133,7 +160,7 @@
           regarding personal data you send us (for example support emails). We will respond as required.
         </p>
 
-        <h2>10. Changes</h2>
+        <h2>11. Changes</h2>
         <p>
           We may update this Policy and will revise the “Last updated” date. Where permitted by law,
           continued use after posting constitutes acceptance of the updated Policy.
@@ -153,7 +180,8 @@
         <h2>1. 摘要</h2>
         <p>
           我們<strong>不使用</strong>廣告或第三方分析 SDK 追蹤您，也<strong>不出售</strong>個人資料。
-          App 主要以<strong>離線</strong>方式運作。閱讀進度與設定保存在<strong>您的裝置</strong>。
+          App 主要以<strong>離線</strong>方式運作。閱讀進度、閱讀時間統計與設定保存在<strong>您的裝置</strong>。
+          選擇性書店推播（若開啟）使用 Firebase／Google，詳見下文。
           購買由 <strong>Apple App Store</strong> 或 <strong>Google Play</strong> 處理。
         </p>
 
@@ -161,10 +189,12 @@
         <p>依使用情形，裝置上可能儲存：</p>
         <ul>
           <li>閱讀進度、書籤與收藏</li>
+          <li>閱讀時間（含分鐘）、閱讀天數／連續紀錄、查字次數，以及章節打卡或完成紀錄</li>
           <li>顯示、語言與朗讀設定</li>
           <li>購買解鎖狀態（含裝置安全儲存，若可用）</li>
+          <li>與選擇性書店通知相關的偏好旗標（若有）</li>
         </ul>
-        <p>現行設計下，App <strong>不會</strong>將上述資訊上傳至我們自有伺服器。</p>
+        <p>現行設計下，App <strong>不會</strong>將上述閱讀或進度資訊上傳至我們自有伺服器。</p>
 
         <h2>3. 購買</h2>
         <p>
@@ -179,7 +209,19 @@
           系統語音（Apple／Google 等），授權偏向本機使用，故僅供個人複習，請勿公開上傳或再散布。
         </p>
 
-        <h2>5. 分享與社群平台</h2>
+        <h2>5. 推播通知（選擇性）</h2>
+        <p>
+          在您同意後，App 可能使用 <strong>Firebase Cloud Messaging</strong>（Google）及裝置本機通知，
+          告知書店相關更新——例如新書或更新、書目／下架通知。裝置推播權杖可能註冊至 Google 的 Firebase
+          服務以便投遞訊息。此類通知用於書店與書目營運；我們<strong>不會</strong>藉此將您的閱讀進度、
+          書籤、生詞卡或閱讀時間統計上傳至 Learn Languages Studio Limited。
+        </p>
+        <p>
+          您可拒絕，或之後於 App 設定及／或系統通知設定關閉。解除安裝 App 也會停止對該安裝的投遞。
+          Google 如何處理 Firebase 相關資料，請見 Google 的隱私說明。
+        </p>
+
+        <h2>6. 分享與社群平台</h2>
         <p>
           當您從 App 分享圖片、影片、文字或其他內容——例如透過系統分享選單，或 Instagram 限時動態／Threads
           等捷徑——您所選的 App（如 Instagram、Threads、Facebook、WhatsApp、訊息等）會收到您選取的內容，
@@ -188,28 +230,33 @@
           也不會把閱讀進度、書籤或生詞卡上傳到那些平台。
         </p>
 
-        <h2>6. 語言參考資料</h2>
+        <h2>7. 語言參考資料</h2>
         <p>
           App 可能引用開放語言資源，詳見「關於／致謝」與 App 內套件授權。編製詞彙與難度標示時引用
           Lexique 4（CC BY-SA 4.0）、wordfreq（Apache-2.0）；動詞變位資料編製時參考
           verbecc（LGPL-3.0）及 Wiktionnaire 代詞式分類（CC BY-SA 4.0）。
         </p>
 
-        <h2>7. 兒童</h2>
+        <h2>8. 兒童</h2>
         <p>
           本 App 並非以 13 歲以下兒童（或您所在地區規定之更高年齡）為對象。除支援所需外，
           請勿向我們提供兒童的個人資料。
         </p>
 
-        <h2>8. 個人資料刪除</h2>
+        <h2>9. 個人資料刪除</h2>
         <p>
           您可以自行清除，或向我們請求刪除資料。簡要步驟見
           <a href="data-deletion.html">個人資料刪除說明</a>。
         </p>
         <ol>
           <li>
-            <strong>在您的裝置上。</strong>於 App 設定清除閱讀進度、設定、書籤、收藏、詞上譯與本機備份，
-            或解除安裝 App（也可在系統設定清除 App 儲存空間）。多數資料只存在您的裝置上，這樣就會一併移除。
+            <strong>在您的裝置上。</strong>於 App 設定清除閱讀進度、閱讀時間及相關統計、設定、書籤、收藏、
+            詞上譯與本機備份，或解除安裝 App（也可在系統設定清除 App 儲存空間）。多數資料只存在您的裝置上，
+            這樣就會一併移除。
+          </li>
+          <li>
+            <strong>通知。</strong>於 App 及／或系統通知設定關閉書店通知，或解除安裝 App。
+            我們不為推播另建個人帳號；裝置權杖依上文所述由 Firebase／Google 處理。
           </li>
           <li>
             <strong>商店購買。</strong>購買與恢復紀錄由 Apple App Store 或 Google Play 管理，我們無法代為刪除。
@@ -223,7 +270,7 @@
           </li>
         </ol>
 
-        <h2>9. 您的權利與聯絡</h2>
+        <h2>10. 您的權利與聯絡</h2>
         <p>
           隱私相關問題請寄
           <a href="mailto:support@learnlanguagesstudio.com?subject=%5BFrenchBooks%20%E9%9A%B1%E7%A7%81%E6%AC%8A%E8%A9%A2%E5%95%8F%5D">support@learnlanguagesstudio.com</a>。
@@ -231,7 +278,7 @@
           我們將依法回應。
         </p>
 
-        <h2>10. 變更</h2>
+        <h2>11. 變更</h2>
         <p>
           我們可能更新本政策並修改「最後更新日期」。在法律允許範圍內，公告後繼續使用視為接受更新後政策。
         </p>
@@ -250,7 +297,8 @@
         <h2>1. 摘要</h2>
         <p>
           我们<strong>不使用</strong>广告或第三方分析 SDK 追踪您，也<strong>不出售</strong>个人数据。
-          应用主要以<strong>离线</strong>方式运行。阅读进度与设置保存在<strong>您的设备</strong>。
+          应用主要以<strong>离线</strong>方式运行。阅读进度、阅读时间统计与设置保存在<strong>您的设备</strong>。
+          选择性书店推送（若开启）使用 Firebase／Google，详见下文。
           购买由 <strong>Apple App Store</strong> 或 <strong>Google Play</strong> 处理。
         </p>
 
@@ -258,10 +306,12 @@
         <p>依使用情况，设备上可能存储：</p>
         <ul>
           <li>阅读进度、书签与收藏</li>
+          <li>阅读时间（含分钟）、阅读天数／连续记录、查字次数，以及章节打卡或完成记录</li>
           <li>显示、语言与朗读设置</li>
           <li>购买解锁状态（含设备安全存储，若可用）</li>
+          <li>与选择性书店通知相关的偏好标志（如有）</li>
         </ul>
-        <p>现行设计下，应用<strong>不会</strong>将上述信息上传至我们自有服务器。</p>
+        <p>现行设计下，应用<strong>不会</strong>将上述阅读或进度信息上传至我们自有服务器。</p>
 
         <h2>3. 购买</h2>
         <p>
@@ -276,7 +326,19 @@
           系统语音（Apple／Google 等），授权偏向本机使用，故仅供个人复习，请勿公开上传或再散布。
         </p>
 
-        <h2>5. 分享与社交平台</h2>
+        <h2>5. 推送通知（选择性）</h2>
+        <p>
+          在您同意后，应用可能使用 <strong>Firebase Cloud Messaging</strong>（Google）及设备本机通知，
+          告知书店相关更新——例如新书或更新、书目／下架通知。设备推送令牌可能注册至 Google 的 Firebase
+          服务以便投递消息。此类通知用于书店与书目运营；我们<strong>不会</strong>借此将您的阅读进度、
+          书签、生词卡或阅读时间统计上传至 Learn Languages Studio Limited。
+        </p>
+        <p>
+          您可拒绝，或之后在应用设置及／或系统通知设置中关闭。卸载应用也会停止对该安装的投递。
+          Google 如何处理 Firebase 相关数据，请见 Google 的隐私说明。
+        </p>
+
+        <h2>6. 分享与社交平台</h2>
         <p>
           当您从应用分享图片、视频、文字或其他内容——例如通过系统分享菜单，或 Instagram 限时动态／Threads
           等捷径——您所选的应用（如 Instagram、Threads、Facebook、WhatsApp、信息等）会收到您选取的内容，
@@ -285,28 +347,33 @@
           也不会把阅读进度、书签或生词卡上传到那些平台。
         </p>
 
-        <h2>6. 语言参考资料</h2>
+        <h2>7. 语言参考资料</h2>
         <p>
           应用可能引用开放语言资源，详见“关于／致谢”与应用内套件授权。编制词汇与难度标示时引用
           Lexique 4（CC BY-SA 4.0）、wordfreq（Apache-2.0）；动词变位资料编制时参考
           verbecc（LGPL-3.0）及 Wiktionnaire 代词式分类（CC BY-SA 4.0）。
         </p>
 
-        <h2>7. 儿童</h2>
+        <h2>8. 儿童</h2>
         <p>
           本应用并非以 13 岁以下儿童（或您所在地区规定的更高年龄）为对象。除支持所需外，
           请勿向我们提供儿童的个人数据。
         </p>
 
-        <h2>8. 个人资料删除</h2>
+        <h2>9. 个人资料删除</h2>
         <p>
           您可以自行清除，或向我们请求删除数据。简要步骤见
           <a href="data-deletion.html">个人资料删除说明</a>。
         </p>
         <ol>
           <li>
-            <strong>在您的设备上。</strong>在应用设置中清除阅读进度、设置、书签、收藏、词上译与本地备份，
-            或卸载应用（也可在系统设置中清除应用存储）。多数数据只保存在您的设备上，这样就会一并移除。
+            <strong>在您的设备上。</strong>在应用设置中清除阅读进度、阅读时间及相关统计、设置、书签、收藏、
+            词上译与本地备份，或卸载应用（也可在系统设置中清除应用存储）。多数数据只保存在您的设备上，
+            这样就会一并移除。
+          </li>
+          <li>
+            <strong>通知。</strong>在应用及／或系统通知设置中关闭书店通知，或卸载应用。
+            我们不为推送另建个人账号；设备令牌依上文所述由 Firebase／Google 处理。
           </li>
           <li>
             <strong>商店购买。</strong>购买与恢复记录由 Apple App Store 或 Google Play 管理，我们无法代为删除。
@@ -320,7 +387,7 @@
           </li>
         </ol>
 
-        <h2>9. 您的权利与联系</h2>
+        <h2>10. 您的权利与联系</h2>
         <p>
           隐私相关问题请发送至
           <a href="mailto:support@learnlanguagesstudio.com?subject=%5BFrenchBooks%20%E9%9A%B1%E7%A7%81%E6%AC%8A%E8%A9%A2%E5%95%8F%5D">support@learnlanguagesstudio.com</a>。
@@ -328,7 +395,7 @@
           我们将依法回应。
         </p>
 
-        <h2>10. 变更</h2>
+        <h2>11. 变更</h2>
         <p>
           我们可能更新本政策并修改“最后更新日期”。在法律允许范围内，公告后继续使用视为接受更新后政策。
         </p>
@@ -350,20 +417,27 @@
         <p>
           Nous n’utilisons <strong>pas</strong> de SDK publicitaires ni d’analytique tierce pour vous suivre,
           et nous ne vendons <strong>pas</strong> de données personnelles. L’application fonctionne surtout
-          <strong>hors ligne</strong>. La progression et les réglages restent sur <strong>votre appareil</strong>.
-          Les achats sont traités par l’<strong>App Store</strong> ou <strong>Google Play</strong>.
+          <strong>hors ligne</strong>. La progression, les statistiques de temps de lecture et les réglages
+          restent sur <strong>votre appareil</strong>. Les notifications push magasin optionnelles (si activées)
+          utilisent Firebase／Google comme décrit ci-dessous. Les achats sont traités par l’<strong>App Store</strong>
+          ou <strong>Google Play</strong>.
         </p>
 
         <h2>2. Informations stockées sur votre appareil</h2>
         <p>Selon l’usage, votre appareil peut conserver :</p>
         <ul>
           <li>progression de lecture, signets et favoris ;</li>
+          <li>
+            temps de lecture (y compris les minutes), jours de lecture ou séries, nombre de
+            consultations du dictionnaire, et pointages ou achèvements de chapitres ;
+          </li>
           <li>préférences d’affichage, de langue et de synthèse vocale ;</li>
-          <li>état de déblocage après achat (y compris stockage sécurisé local, le cas échéant).</li>
+          <li>état de déblocage après achat (y compris stockage sécurisé local, le cas échéant) ;</li>
+          <li>indicateurs de préférence liés aux alertes magasin optionnelles (le cas échéant).</li>
         </ul>
         <p>
           Dans sa conception actuelle, l’application <strong>n’envoie pas</strong> ces informations
-          vers des serveurs exploités par Learn Languages Studio Limited.
+          de lecture ou de progression vers des serveurs exploités par Learn Languages Studio Limited.
         </p>
 
         <h2>3. Achats</h2>
@@ -382,7 +456,22 @@
           ne le mettez pas en ligne ni ne le redistribuez.
         </p>
 
-        <h2>5. Partage et plateformes sociales</h2>
+        <h2>5. Notifications push (optionnelles)</h2>
+        <p>
+          Avec votre autorisation, l’application peut utiliser <strong>Firebase Cloud Messaging</strong>
+          (Google) et des notifications locales pour vous informer des mises à jour du magasin—par exemple
+          nouveautés ou mises à jour de titres, ou avis de catalogue／retrait. Un jeton push de l’appareil
+          peut être enregistré auprès des services Firebase de Google pour la livraison. Ces avis concernent
+          le magasin et le catalogue ; ils ne servent <strong>pas</strong> à envoyer votre progression,
+          vos signets, fiches de vocabulaire ou statistiques de temps de lecture à Learn Languages Studio Limited.
+        </p>
+        <p>
+          Vous pouvez refuser ou désactiver plus tard les notifications dans les réglages de l’app et／ou
+          du système. Désinstaller l’app arrête aussi la livraison pour cette installation. Le traitement
+          Firebase par Google est décrit dans la documentation de confidentialité de Google.
+        </p>
+
+        <h2>6. Partage et plateformes sociales</h2>
         <p>
           Lorsque vous partagez des images, vidéos, textes ou autre contenu depuis l’app—via la feuille de
           partage système ou des raccourcis (p. ex. Stories Instagram ou Threads)—l’app que vous choisissez
@@ -393,7 +482,7 @@
           n’y envoyons pas votre progression, signets ou fiches de vocabulaire.
         </p>
 
-        <h2>6. Données linguistiques de référence</h2>
+        <h2>7. Données linguistiques de référence</h2>
         <p>
           L’application peut s’appuyer sur des ressources linguistiques ouvertes, comme indiqué dans
           À propos / Crédits (y compris les licences des paquets dans l’appli). Lexique 4 (CC BY-SA 4.0)
@@ -402,22 +491,27 @@
           du Wiktionnaire (CC BY-SA 4.0).
         </p>
 
-        <h2>7. Enfants</h2>
+        <h2>8. Enfants</h2>
         <p>
           L’application n’est pas destinée aux enfants de moins de 13 ans (ou l’âge plus élevé requis localement).
           Ne nous communiquez pas de données personnelles d’enfants sauf pour le support.
         </p>
 
-        <h2>8. Suppression des données</h2>
+        <h2>9. Suppression des données</h2>
         <p>
           Vous pouvez effacer vos données ou nous en demander la suppression. Guide court :
           <a href="data-deletion.html">Informations sur la suppression des données</a>.
         </p>
         <ol>
           <li>
-            <strong>Sur votre appareil.</strong> Effacez progression, réglages, signets, favoris, gloses
-            et sauvegardes dans l’app, ou désinstallez l’app (ou effacez le stockage de l’app). La plupart
-            des données restent uniquement sur l’appareil.
+            <strong>Sur votre appareil.</strong> Effacez progression, temps de lecture et statistiques
+            associées, réglages, signets, favoris, gloses et sauvegardes dans l’app, ou désinstallez l’app
+            (ou effacez le stockage de l’app). La plupart des données restent uniquement sur l’appareil.
+          </li>
+          <li>
+            <strong>Notifications.</strong> Désactivez les alertes magasin dans l’app et／ou les réglages
+            système, ou désinstallez l’app. Nous ne tenons pas de compte utilisateur distinct pour le push ;
+            les jetons d’appareil sont gérés via Firebase／Google comme indiqué ci-dessus.
           </li>
           <li>
             <strong>Achats magasin.</strong> Les historiques d’achat et de restauration sont gérés par l’App Store
@@ -435,7 +529,7 @@
           </li>
         </ol>
 
-        <h2>9. Vos droits et contact</h2>
+        <h2>10. Vos droits et contact</h2>
         <p>
           Pour toute question :
           <a href="mailto:support@learnlanguagesstudio.com?subject=%5BFrenchBooks%20%E9%9A%B1%E7%A7%81%E6%AC%8A%E8%A9%A2%E5%95%8F%5D">support@learnlanguagesstudio.com</a>.
@@ -443,7 +537,7 @@
           que vous nous envoyez (p. ex. e-mails de support). Nous y répondrons conformément à la loi.
         </p>
 
-        <h2>10. Modifications</h2>
+        <h2>11. Modifications</h2>
         <p>
           Nous pouvons mettre à jour cette politique et la date de « Dernière mise à jour ».
           Dans la mesure permise par la loi, l’usage continu après publication vaut acceptation.
