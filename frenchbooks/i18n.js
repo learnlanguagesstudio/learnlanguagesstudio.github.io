@@ -141,26 +141,34 @@ const LEGAL_CHROME = {
   cht: {
     linkPrivacy: "隱私權政策",
     linkTerms: "使用條款",
+    linkDeletion: "資料刪除",
     linkContact: "聯絡我們",
     homeLink: "看小說學法語：法文分級雙語閱讀器",
+    footer: "看小說學法語：法文分級雙語閱讀器",
   },
   chs: {
     linkPrivacy: "隐私权政策",
     linkTerms: "使用条款",
+    linkDeletion: "数据删除",
     linkContact: "联系我们",
     homeLink: "看小说学法语：法文分级双语阅读器",
+    footer: "看小说学法语：法文分级双语阅读器",
   },
   en: {
     linkPrivacy: "Privacy policy",
     linkTerms: "Terms of use",
+    linkDeletion: "Data deletion",
     linkContact: "Contact",
     homeLink: "Learn French: Bilingual Reader",
+    footer: "Learn French: Bilingual Reader",
   },
   fr: {
     linkPrivacy: "Confidentialité",
     linkTerms: "Conditions",
+    linkDeletion: "Suppression des données",
     linkContact: "Contact",
     homeLink: "Français Facile : Lectures Graduées",
+    footer: "Français Facile : Lectures Graduées",
   },
 };
 
