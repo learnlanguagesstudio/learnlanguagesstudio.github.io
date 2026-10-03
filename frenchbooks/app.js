@@ -8,8 +8,11 @@ const APP_STORE_URL = "";
 const STRINGS = {
   cht: {
     htmlLang: "zh-Hant",
-    title: "看小說學法語：法文分級雙語閱讀器",
-    brand: "看小說學法語：法文分級雙語閱讀器",
+    title: "French Parallel Library 法語圖書館",
+    brand: "French Parallel Library 法語圖書館",
+    desktopName: "看小說學法語",
+    description:
+      "法文小說雙語對照；點詞查義、文法提示，收藏後匯出複習。",
     headline: "用讀小說的方式學法語",
     lead: "法文小說雙語對照；也可用更淺的法語讀懂句意。點詞查義、文法提示，收藏後匯出複習。",
     playLabel: "Google Play",
@@ -26,7 +29,7 @@ const STRINGS = {
     f3Body: "點選單字看詞義；時態、結構與變位提示幫你看懂詞形與句構。",
     f4Title: "匯出 Anki／CSV",
     f4Body: "收藏生詞後一鍵匯出，方便之後用 Anki 或 CSV 複習。",
-    footer: "看小說學法語：法文分級雙語閱讀器",
+    footer: "French Parallel Library 法語圖書館",
     studioLink: "Learn Languages Studio",
     linkPrivacy: "隱私權政策",
     linkTerms: "使用條款",
@@ -34,8 +37,11 @@ const STRINGS = {
   },
   chs: {
     htmlLang: "zh-Hans",
-    title: "看小说学法语：法文分级双语阅读器",
-    brand: "看小说学法语：法文分级双语阅读器",
+    title: "French Parallel Library 法语图书馆",
+    brand: "French Parallel Library 法语图书馆",
+    desktopName: "看小说学法语",
+    description:
+      "法文小说双语对照；点词查义、文法提示，收藏后导出复习。",
     headline: "用读小说的方式学法语",
     lead: "法文小说双语对照；也可用更浅的法语读懂句意。点词查义、文法提示，收藏后导出复习。",
     playLabel: "Google Play",
@@ -52,7 +58,7 @@ const STRINGS = {
     f3Body: "点选单字看词义；时态、结构与变位提示帮你看懂词形与句构。",
     f4Title: "导出 Anki／CSV",
     f4Body: "收藏生词后一键导出，方便之后用 Anki 或 CSV 复习。",
-    footer: "看小说学法语：法文分级双语阅读器",
+    footer: "French Parallel Library 法语图书馆",
     studioLink: "Learn Languages Studio",
     linkPrivacy: "隐私权政策",
     linkTerms: "使用条款",
@@ -60,8 +66,11 @@ const STRINGS = {
   },
   en: {
     htmlLang: "en",
-    title: "Learn French: Bilingual Reader",
-    brand: "Learn French: Bilingual Reader",
+    title: "Livre Français Parallel Reader",
+    brand: "Livre Français Parallel Reader",
+    desktopName: "FrenchBooks",
+    description:
+      "Bilingual French novels, tap for glosses and grammar, then export for review.",
     headline: "Learn French by reading novels",
     lead: "Bilingual novel reading, plus simpler French paraphrases when you want to stay in French. Tap for glosses and grammar, then export for review.",
     playLabel: "Google Play",
@@ -78,7 +87,7 @@ const STRINGS = {
     f3Body: "Tap a word for glosses; tense and structure cues help you see forms and how the sentence works.",
     f4Title: "Anki／CSV export",
     f4Body: "Save words, then export them for review in Anki or CSV.",
-    footer: "Learn French: Bilingual Reader",
+    footer: "Livre Français Parallel Reader",
     studioLink: "Learn Languages Studio",
     linkPrivacy: "Privacy policy",
     linkTerms: "Terms of use",
@@ -86,8 +95,11 @@ const STRINGS = {
   },
   fr: {
     htmlLang: "fr",
-    title: "Français Facile : Lectures Graduées",
-    brand: "Français Facile : Lectures Graduées",
+    title: "Parallel: Livre Audio Français",
+    brand: "Parallel: Livre Audio Français",
+    desktopName: "Livres FR",
+    description:
+      "Romans bilingues en français, gloses et grammaire au toucher, export pour réviser.",
     headline: "Apprendre le français en lisant des romans",
     lead: "Lecture bilingue des romans, et un français plus simple pour comprendre la phrase. Touchez pour le sens et la grammaire, puis exportez pour réviser.",
     playLabel: "Google Play",
@@ -104,7 +116,7 @@ const STRINGS = {
     f3Body: "Touchez un mot pour le sens ; temps et structure éclairent les formes et la phrase.",
     f4Title: "Export Anki／CSV",
     f4Body: "Enregistrez des mots, puis exportez-les pour réviser dans Anki ou en CSV.",
-    footer: "Français Facile : Lectures Graduées",
+    footer: "Parallel: Livre Audio Français",
     studioLink: "Learn Languages Studio",
     linkPrivacy: "Confidentialité",
     linkTerms: "Conditions",
@@ -129,10 +141,56 @@ function applyStoreButton(el, url, openLabel, soonLabel) {
   }
 }
 
+const STORE_NAMES = [
+  "French Parallel Library 法語圖書館",
+  "French Parallel Library 法语图书馆",
+  "Livre Français Parallel Reader",
+  "Parallel: Livre Audio Français",
+];
+
+const DESKTOP_NAMES = [
+  "看小說學法語",
+  "看小说学法语",
+  "FrenchBooks",
+  "Livres FR",
+];
+
+function setMetaContent(selector, value) {
+  const node = document.querySelector(selector);
+  if (node && value) node.setAttribute("content", value);
+}
+
+function syncJsonLd(pack) {
+  const el = document.getElementById("app-jsonld");
+  if (!el) return;
+  const alternate = STORE_NAMES.concat(DESKTOP_NAMES).filter(
+    (name, i, arr) => name && name !== pack.brand && arr.indexOf(name) === i
+  );
+  el.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    name: pack.brand,
+    alternateName: alternate,
+    applicationCategory: "EducationalApplication",
+    operatingSystem: "iOS, Android",
+    image: "https://learnlanguagesstudio.com/frenchbooks/app-icon.png",
+    url: "https://learnlanguagesstudio.com/frenchbooks/",
+    author: {
+      "@type": "Organization",
+      name: "Learn Languages Studio Limited",
+      url: "https://learnlanguagesstudio.com/",
+    },
+  });
+}
+
 function applyI18n(locale) {
   const pack = STRINGS[locale] || STRINGS.en;
   document.documentElement.lang = pack.htmlLang;
   document.title = pack.title;
+  setMetaContent('meta[name="description"]', pack.description);
+  setMetaContent('meta[property="og:title"]', pack.brand);
+  setMetaContent('meta[property="og:description"]', pack.description);
+  syncJsonLd(pack);
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.getAttribute("data-i18n");
@@ -153,6 +211,7 @@ function applyI18n(locale) {
   }
 
   syncLangQueryLinks(locale);
+  replaceLangInUrl(locale);
   saveLocale(locale);
 }
 

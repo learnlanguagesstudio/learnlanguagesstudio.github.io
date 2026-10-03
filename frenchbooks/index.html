@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Learn French by reading novels — bilingual text, simpler French paraphrase, tap for glosses and grammar."
+      content="French Parallel Library — bilingual French novels, tap for glosses and grammar, export for review."
     />
-    <title>看小說學法語</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="French Parallel Library 法語圖書館" />
+    <meta
+      property="og:description"
+      content="Bilingual French novels, tap for glosses and grammar, export for review."
+    />
+    <meta
+      property="og:url"
+      content="https://learnlanguagesstudio.com/frenchbooks/"
+    />
+    <meta
+      property="og:image"
+      content="https://learnlanguagesstudio.com/frenchbooks/app-icon.png"
+    />
+    <title>French Parallel Library 法語圖書館</title>
+    <link rel="icon" type="image/png" href="app-icon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +31,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json" id="app-jsonld">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "French Parallel Library 法語圖書館",
+        "alternateName": [
+          "看小說學法語",
+          "French Parallel Library 法语图书馆",
+          "Livre Français Parallel Reader",
+          "Parallel: Livre Audio Français",
+          "FrenchBooks",
+          "Livres FR",
+          "看小说学法语"
+        ],
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "iOS, Android",
+        "image": "https://learnlanguagesstudio.com/frenchbooks/app-icon.png",
+        "url": "https://learnlanguagesstudio.com/frenchbooks/",
+        "author": {
+          "@type": "Organization",
+          "name": "Learn Languages Studio Limited",
+          "url": "https://learnlanguagesstudio.com/"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="site-header site-header--product">
@@ -42,7 +83,19 @@
 
     <main>
       <section class="hero">
-        <h1 class="brand" data-i18n="brand">看小說學法語：法文分級雙語閱讀器</h1>
+        <div class="brand-lockup">
+          <div class="brand-icon-stack">
+            <img
+              class="brand-icon"
+              src="app-icon.png"
+              width="88"
+              height="88"
+              alt=""
+            />
+            <p class="brand-alias" data-i18n="desktopName">看小說學法語</p>
+          </div>
+          <h1 class="brand" data-i18n="brand">French Parallel Library 法語圖書館</h1>
+        </div>
         <p class="headline" data-i18n="headline">用讀小說的方式學法語</p>
         <p class="lead" data-i18n="lead">
           法文小說雙語對照；也可用更淺的法語讀懂句意。點詞查義、文法提示，收藏後匯出複習。
@@ -114,7 +167,7 @@
         <span aria-hidden="true">·</span>
         <a href="mailto:support@learnlanguagesstudio.com?subject=%5BFrenchBooks%20%E7%B6%B2%E7%AB%99%E8%81%AF%E7%B5%A1%5D" data-i18n="linkContact">聯絡我們</a>
       </nav>
-      <p data-i18n="footer">看小說學法語：法文分級雙語閱讀器</p>
+      <p data-i18n="footer">French Parallel Library 法語圖書館</p>
       <p class="footer-copy">© 2026 Learn Languages Studio Limited. All rights reserved.</p>
     </footer>
 
