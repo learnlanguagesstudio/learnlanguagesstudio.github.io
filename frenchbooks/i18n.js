@@ -163,8 +163,8 @@ const LEGAL_CHROME = {
     linkPrivacy: "Confidentialité",
     linkTerms: "Conditions",
     linkContact: "Contact",
-    homeLink: "Parallel: Livre Audio Français",
-    footer: "Parallel: Livre Audio Français",
+    homeLink: "Livre Audio & Lecture Français",
+    footer: "Livre Audio & Lecture Français",
   },
 };
 

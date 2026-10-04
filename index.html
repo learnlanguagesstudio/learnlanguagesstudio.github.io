@@ -8,13 +8,24 @@
       content="Learn Languages Studio Limited — language-learning apps."
     />
     <title>Learn Languages Studio</title>
+    <link rel="icon" type="image/png" href="app-icon.png" />
+    <link rel="apple-touch-icon" href="app-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Syne:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Outfit:wght@700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Learn Languages Studio Limited",
+        "url": "https://learnlanguagesstudio.com/",
+        "email": "support@learnlanguagesstudio.com"
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -29,18 +40,32 @@
     <main>
       <section class="studio-hero">
         <p class="studio-kicker" data-i18n="kicker">Learn Languages Studio</p>
-        <h1 class="studio-brand" data-i18n="brand">Learn Languages Studio Limited</h1>
+        <h1 class="studio-brand">
+          <span class="studio-brand__name">Learn Languages</span>
+          <span class="studio-brand__studio">Studio</span>
+          <span class="studio-brand__legal">Limited</span>
+        </h1>
         <p class="studio-lead" data-i18n="lead">
           We make language-learning apps. Here’s what we publish.
         </p>
 
         <div class="product-list" aria-label="Apps">
           <a class="product-row" href="https://learnlanguagesstudio.com/frenchbooks/">
+            <img
+              class="product-row__icon"
+              src="app-icon.png"
+              width="64"
+              height="64"
+              alt=""
+            />
             <div class="product-row__text">
               <p class="product-row__eyebrow" data-i18n="productEyebrow">App</p>
               <h2 class="product-row__title" data-i18n="productTitle">
-                Learn French: Bilingual Reader
+                Livre Français Parallel Reader
               </h2>
+              <p class="product-row__alias" data-i18n="productDesktop">
+                On the home screen: FrenchBooks
+              </p>
               <p class="product-row__body" data-i18n="productBody">
                 Graded bilingual novels, tap-for-glosses, grammar hints, and export for review.
               </p>

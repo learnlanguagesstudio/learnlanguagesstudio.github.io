@@ -95,8 +95,8 @@ const STRINGS = {
   },
   fr: {
     htmlLang: "fr",
-    title: "Parallel: Livre Audio Français",
-    brand: "Parallel: Livre Audio Français",
+    title: "Livre Audio & Lecture Français",
+    brand: "Livre Audio & Lecture Français",
     desktopName: "Livres FR",
     description:
       "Romans bilingues en français, gloses et grammaire au toucher, export pour réviser.",
@@ -116,7 +116,7 @@ const STRINGS = {
     f3Body: "Touchez un mot pour le sens ; temps et structure éclairent les formes et la phrase.",
     f4Title: "Export Anki／CSV",
     f4Body: "Enregistrez des mots, puis exportez-les pour réviser dans Anki ou en CSV.",
-    footer: "Parallel: Livre Audio Français",
+    footer: "Livre Audio & Lecture Français",
     studioLink: "Learn Languages Studio",
     linkPrivacy: "Confidentialité",
     linkTerms: "Conditions",
@@ -144,8 +144,9 @@ function applyStoreButton(el, url, openLabel, soonLabel) {
 const STORE_NAMES = [
   "French Parallel Library 法語圖書館",
   "French Parallel Library 法语图书馆",
+  "Français Parallel Library 法語小說",
   "Livre Français Parallel Reader",
-  "Parallel: Livre Audio Français",
+  "Livre Audio & Lecture Français",
 ];
 
 const DESKTOP_NAMES = [
