@@ -176,10 +176,12 @@ function syncJsonLd(pack) {
     operatingSystem: "iOS, Android",
     image: "https://learnlanguagesstudio.com/frenchbooks/app-icon.png",
     url: "https://learnlanguagesstudio.com/frenchbooks/",
+    sameAs: ["https://www.instagram.com/easyfrench.reading/"],
     author: {
       "@type": "Organization",
       name: "Learn Languages Studio Limited",
       url: "https://learnlanguagesstudio.com/",
+      sameAs: ["https://www.instagram.com/easyfrench.reading/"],
     },
   });
 }
